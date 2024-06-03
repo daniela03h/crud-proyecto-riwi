@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Nombre </label>
+                <input type="text" class="form-control" id="name">
+            </div>
+            <div class="mb-3">
+                <label for="city" class="form-label">cuidad</label>
+                <input type="text" class="form-control" id="city">
+              </div>
+          <div class="mb-3">
+            <label for="url" class="form-label">URL</label>
+            <input type="text" class="form-control" id="url">
+          </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+        <section class="table-responsive">
+            <table class="table table-striped text-center align-middle table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">City</th>
+                        <th scope="col">URL</th>
+                    </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                    <!-- Aca se van a listar las categorias -->
+                </tbody>
+            </table>
+        </section>
+
+
+    </div>
+    
+
+
+
+    <script type="module" src="../js/travel-place.js"></script>
+    <script type="module" src="../js/main.js"></script>
+</body>
+</html>
