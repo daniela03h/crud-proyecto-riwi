@@ -2,6 +2,7 @@ const form = document.querySelector("form")
 const nombre = document.querySelector("#name")
 const ciudad = document.querySelector("#city")
 const url = document.querySelector("#url")
+const estado = document.querySelector('#status')
 const boton = document.querySelector(".btn")
 const apiUrl = "http://localhost:3000/travelPlaces"
 const tbody = document.querySelector('tbody')
@@ -51,7 +52,8 @@ form.addEventListener("submit", async (event) => {
         name: nombre.value,
         city: ciudad.value,
         url: url.value,
-        idUser: activeUser.id
+        idUser: activeUser.id,
+        deshabilitado: estado.checked
     }
     if(travelPlaceId === undefined) {
         const response = await fetch(apiUrl, {
@@ -99,7 +101,7 @@ async function pintarTabla() {
     const data = await response.json()
     tbody.innerHTML = ""
     data
-        .filter(element => element.idUser === activeUser.id)
+        .filter(element => element.idUser === activeUser.id && element.deshabilitado === false)
         .forEach(element => {
             tbody.innerHTML += `
             <td>${element.id}</td>
@@ -137,4 +139,5 @@ async function findTravelPlace(id) {
     nombre.value = data.name
     ciudad.value =  data.city
     url.value = data.url
+    estado.checked = data.deshabilitado
 }

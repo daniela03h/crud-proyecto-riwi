@@ -38,32 +38,20 @@
   ],
   "travelPlaces": [
     {
-      "name": "comuna 13",
-      "city": "medellin",
-      "url": "https://www.booking.com/city/co/guatape.en.html",
-      "idUser": "1d05",
-      "id": "8a14"
+      "name": "Piedra del Peñol",
+      "city": "Guatape",
+      "url": "https://www.medellin.travel/pueblito-paisa-cerro-nutibara/",
+      "idUser": "8426",
+      "deshabilitado": false,
+      "id": "d0a6"
     },
     {
-      "id": "edf5",
       "name": "Pueblito Paisa",
       "city": "Medellin",
       "url": "https://www.medellin.travel/pueblito-paisa-cerro-nutibara/",
-      "idUser": "1d05"
-    },
-    {
-      "id": "6ee9",
-      "name": "comuna 13",
-      "city": "bogota",
-      "url": "https://www.booking.com/city/co/guatape.en.html",
-      "idUser": "1d05"
-    },
-    {
-      "name": "Multiplaza Bogota",
-      "city": "Bogota",
-      "url": "https://www.medellin.travel/pueblito-paisa-cerro-nutibara/",
-      "idUser": "1d05",
-      "id": "b4dd"
+      "idUser": "8426",
+      "deshabilitado": true,
+      "id": "3abd"
     }
   ]
 }
